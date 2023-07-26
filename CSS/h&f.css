@@ -199,7 +199,6 @@ a {
 .introduction {
     padding-top: 5px;
 }
-
 .title::before {
     content: "";
     position: absolute;
@@ -234,16 +233,6 @@ img {
 .info {
     display: flex;
 }
-
-.item {
-    font-size: 14px;
-    color: #ccc;
-    padding: 10px;
-    border: 1px solid #000;
-    margin: 10px;
-    border-radius: 10px;
-}
-
 .n-tag {
     padding: 10px;
     background-color: #000;
@@ -252,7 +241,9 @@ img {
     margin: 5px;
     border-radius: 10px;
 }
-
+.news{
+    margin-top: 30px;
+}
 .news-c {
     display: flex;
 }
@@ -307,7 +298,6 @@ img {
 .cityC .cityCC:nth-child(2) {
     width: 30%;
 }
-
 .cityC .cityCC:nth-child(1),
 .cityC .cityCC:nth-child(3) {
     margin-top: 100px;   
@@ -316,13 +306,10 @@ img {
     padding: 20px;
     text-align: center;
 }
-
-
 .goTo-hashtag {
     font-size: 20px;
     margin: 10px;
 }
-
 .goTo-bar {
     font-size: 64px;
     margin: 10px;
@@ -355,7 +342,6 @@ img {
     position: relative;
     margin: 10px;
 }
-
 .loc-Text {
     font-size: 30px;
     align-content: center;
@@ -366,15 +352,12 @@ img {
     padding: 10px;
     border-radius: 10px;
 }
-
 .theme-Box {
     display: flex;
 }
-
 .theme-Box>div {
     margin: 10px;
 }
-
 .theme-card-grid {
     width: 50%;
     display: grid;
@@ -383,16 +366,13 @@ img {
     grid-gap: 10px;
     /* 設定卡片間的間距 */
 }
-
 .theme-card-main {
     width: 50%;
     position: relative;
 }
-
 .theme-card-main img {
     height: 391px;
 }
-
 .theme-card-main-Text {
     position: absolute;
     bottom: 10%;
@@ -400,11 +380,9 @@ img {
     padding: 10px;
     font-size: 20px;
 }
-
 .gridC {
     position: relative;
 }
-
 .theme-card-grid-Text {
     position: absolute;
     bottom: 10%;
@@ -413,12 +391,10 @@ img {
     min-height: 50px;
     line-height: 20px;
 }
-
 .self-guided-card {
     width: 25%;
     margin: 10px;
 }
-
 .SG-title {
     max-height: 40px;
     overflow: hidden;
@@ -426,7 +402,6 @@ img {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-
 .self-guided-card-wrap {
     display: flex;
 }
@@ -442,7 +417,7 @@ img {
     font-weight: 600;
     margin-bottom: 40px;
     position: relative;
-  }
+}
   .breadcrumb li+li:before {
     content: ">";
     text-rendering: auto;
@@ -450,18 +425,15 @@ img {
     margin: 0 7px;
     padding: 0;
 }
-
 .breadcrumb {
     margin: 12px;
 }
-
 .breadcrumb-ol {
     display: flex;
     align-items: center;
     font-size: 12px;
  
 }
-
 .breadcrumb-item a {
     text-decoration: none;
     color: #cccccc;
@@ -528,4 +500,60 @@ li {
     width: 16.666666%;
     margin: 10px;
     cursor: pointer;
+}
+.SC {
+    display: flex;
+    margin-top: 10px;
+    background-color: #cccccc29;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 0;
+}
+.SC>div img {
+    width: 300px;
+}
+.SC-D {
+    display: flex;
+}
+.gopay {
+    padding: 20px 20px;
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+}
+.gopay div:first-child {
+    display: flex;
+}
+.gopay div:nth-child(3) {
+    justify-content: end;
+}
+.iAmLine {
+    border: 1px solid black;
+    margin: 10px;
+}
+.SCTW {
+    display: flex;
+    position: relative;
+}
+.check150 {
+    width: 180px;
+    margin-left: 10px;
+    font-size: 8px;
+}
+.check150 h3 {
+    font-size: 14px;
+    font-weight: 900;
+}
+.payIt {
+    display: flex;
+}
+.payIt span {
+    margin: 10px;
+}
+.payIt>a>button {
+    margin-top: 8px;
+    background-color: #ccc;
+    width: 100px;
+    border: 0;
+    border-radius: 10px;
 }
