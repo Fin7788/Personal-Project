@@ -19,22 +19,8 @@
 
 
     <style>
-        .title::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0px;
-            height: 30px;
-            width: 5px;
-            background: #F4C259;
-        }
 
-        .title {
-            font-size: 30px;
-            font-weight: 500;
-            padding-left: 10px;
-            align-self: end;
-        }
+
 
         .hotgo {
             display: flex;
@@ -71,12 +57,7 @@
             display: flex;
         }
 
-        .tag {
-            padding: 1px;
-            display: inline;
-            background-color: #000;
-            color: #ffffff;
-        }
+
 
         .news-c {
             display: flex;
@@ -86,37 +67,7 @@
             padding-top: 30px;
         }
 
-        .button {
-            margin: 10px;
-            position: relative;
-            top: 50%;
-            transform: translateY(50%);
-        }
-
-        .t-card-wrap {
-            display: flex;
-        }
-
-        .t-card {
-            width: 25%;
-            height: 400px;
-            border: 1px solid black;
-            border-radius: 20px;
-            margin-left: 10px;
-            margin-right: 10px;
-            overflow: hidden;
-        }
-
-        .t-card {
-            position: relative;
-        }
-
-        .cn {
-            padding: 100px;
-            text-align: center;
-        }
-
-
+    
         .goTo {
             color: #ffffff;
         }
@@ -130,15 +81,6 @@
             font-size: 64px;
             margin: 10px;
         }
-
-        .goB {
-            font-size: 16px;
-            border: 2px solid #ffffff97;
-            padding: 14px 24px 14px 24px;
-            border-radius: 10px;
-            margin: 30px;
-        }
-
 
         .goTo {
             position: absolute;
@@ -158,7 +100,9 @@
 
 <body>
     <header>
-        <a href="#top"><div class="top-b">TOP</div></a>
+        <a href="#top">
+            <div class="top-b">TOP</div>
+        </a>
         <div class="ttt">
             <div class="logo">
                 <a href="./index.html"><svg width="179.46" height="73" viewBox="0 0 767 312" fill="none"
@@ -196,16 +140,16 @@
                 <div class="goTo-hashtag">#九州鐵道</div>
                 <div class="goTo-bar">九州鐵道旅</div>
                 <a class="goB" href="./product-page.html">
-                    <div>走吧</div>
+                    <div>走吧 <i class="fas fa-arrow-right"></i></div>
                 </a>
             </div>
         </div>
     </div>
     <div class="subList">
-        <a href="#pop"><button class="CJ">熱門精選</button></a>
-        <a href="#news"><button class="CJ">最新消息</button></a>
-        <a href="#the"><button class="CJ">主題行程</button></a>
-        <a href="#hot"><button class="CJ">熱門城市</button></a>
+        <a href="#pop" class="CJ">熱門精選</a>
+        <a href="#news" class="CJ">最新消息</a>
+        <a href="#the" class="CJ">主題行程</a>
+        <a href="#hot" class="CJ">熱門城市</a>
     </div>
     <div class="bWarp">
         <div class="list_block" id="pop"></div>
@@ -241,7 +185,7 @@
                     <div class="eztext">熱門機票</div>
                 </div>
             </div>
-            <div class="list_block"  id="news"></div>
+            <div class="list_block" id="news"></div>
         </div>
         <div class="list_block"></div>
         <div class="news">
@@ -250,17 +194,17 @@
             </div>
             <div class="list_block">
                 <div class="news_block open">
-                    <div class="item">
+                    <div class="n-item">
                         <div class="info">
-                            <div class="item">
+                            <div class="n-item">
                                 2023-07-17
                             </div>
-                            <div class="item">
+                            <div class="n-item">
                                 挪威
                             </div>
                         </div>
                         <a class="news-c" href="#">
-                            <div class="tag">
+                            <div class="n-tag">
                                 NEWS
                             </div>
                             <div class="newsText">
@@ -268,17 +212,17 @@
                             </div>
                         </a>
                     </div>
-                    <div class="item">
+                    <div class="n-item">
                         <div class="info">
-                            <div class="item">
+                            <div class="n-item">
                                 2023-07-17
                             </div>
-                            <div class="item">
+                            <div class="n-item">
                                 挪威
                             </div>
                         </div>
                         <a class="news-c" href="#">
-                            <div class="tag">
+                            <div class="n-tag">
                                 NEWS
                             </div>
                             <div class="newsText">
@@ -286,17 +230,17 @@
                             </div>
                         </a>
                     </div>
-                    <div class="item">
+                    <div class="n-item">
                         <div class="info">
-                            <div class="item">
+                            <div class="n-item">
                                 2023-07-17
                             </div>
-                            <div class="item">
+                            <div class="n-item">
                                 挪威
                             </div>
                         </div>
-                        <a class="news-c" href="#" title="">
-                            <div class="tag">
+                        <a class="news-c" href="#">
+                            <div class="n-tag">
                                 NEWS
                             </div>
                             <div class="newsText">
@@ -305,28 +249,29 @@
                         </a>
                     </div>
                 </div>
-                <div class="list_block"  id="the"></div>
+                <div class="list_block" id="the"></div>
             </div>
             <div class="list_block">
                 <div class="TOP">
                     <div class="aca">
                         <div class="title">主題行程</div>
-                        <div class="button">
+                        <div class="w-button">
                             <button>亞洲</button>
                             <button>亞洲</button>
                             <button>亞洲</button>
                         </div>
                     </div>
-                    <div class="list_block"></div>
                     <div class="t-card-wrap">
                         <div class="t-card">
                             <a class="t-card-a" href="">
                                 <div class="new-t"><img src="./pic/zoo.jpg" alt=""></div>
-                                <div class="t-title">南投草屯︱九九峰動物樂園</div>
-                                <div class="t-info">門票｜全票贈半山夢工廠門票｜贈 LINE TAXI 搭車金＆麥當勞冰淇淋</div>
-                                <div class="price">
-                                    <span class="cash">999.99</span>
-                                    <span class="dd">$</span>
+                                <div>
+                                    <div class="t-title">南投草屯︱九九峰動物樂園</div>
+                                    <div class="t-info">門票｜全票贈半山夢工廠門票｜贈 LINE TAXI 搭車金＆麥當勞冰淇淋</div>
+                                    <div class="price">
+                                        <span class="cash">NTD 999.99</span>
+                                        <span class="dd">$</span>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -336,7 +281,7 @@
                                 <div class="t-title">南投草屯︱九九峰動物樂園</div>
                                 <div class="t-info">門票｜全票贈半山夢工廠門票｜贈 LINE TAXI 搭車金＆麥當勞冰淇淋</div>
                                 <div class="price">
-                                    <span class="cash">999.99</span>
+                                    <span class="cash">NTD 999.99</span>
                                     <span class="dd">$</span>
                                 </div>
                             </a>
@@ -347,7 +292,7 @@
                                 <div class="t-title">南投草屯︱九九峰動物樂園</div>
                                 <div class="t-info">門票｜全票贈半山夢工廠門票｜贈 LINE TAXI 搭車金＆麥當勞冰淇淋</div>
                                 <div class="price">
-                                    <span class="cash">999.99</span>
+                                    <span class="cash">NTD 999.99</span>
                                     <span class="dd">$</span>
                                 </div>
                             </a>
@@ -358,13 +303,13 @@
                                 <div class="t-title">南投草屯︱九九峰動物樂園</div>
                                 <div class="t-info">門票｜全票贈半山夢工廠門票｜贈 LINE TAXI 搭車金＆麥當勞冰淇淋</div>
                                 <div class="price">
-                                    <span class="cash">999.99</span>
+                                    <span class="cash">NTD 999.99</span>
                                     <span class="dd">$</span>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="list_block"  id="hot"></div>
+                    <div class="list_block" id="hot"></div>
                 </div>
             </div>
             <div class="list_block"></div>
@@ -397,7 +342,6 @@
         </div>
     </div>
     <div class="tibame">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</div>
-    <div class="list_block"></div>
     <footer class="footer-section">
         <div class="foot-wrap-f">
             <div class="footerLine ">
