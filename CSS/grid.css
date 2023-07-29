@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     --gap: 10px;
 }
@@ -223,6 +224,7 @@
         width: 100%;
     }
 }
+
 .row-cols-1>.col {
     width: 100%;
 }
