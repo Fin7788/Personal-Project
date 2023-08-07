@@ -30,8 +30,8 @@ p {
 
 .bWarp {
     /* width:1200px 改100% */
-    width: 100%;
-    margin: 0 auto;
+    width: auto;
+    margin: 10px;
     position: relative;
 }
 
@@ -358,13 +358,15 @@ img {
 
 .goTo {
     position: absolute;
-    top: 30%;
-    left: 35%;
+    top: 50%;
+    bottom: 50%;
+    left: 30%;
+    right: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: #fff
 }
 
 .locBox {
@@ -639,6 +641,7 @@ li {
     .goTo {
         position: absolute;
         top: 30%;
+        bottom: 30%;
         left: 0;
         display: flex;
         flex-direction: column;
@@ -703,7 +706,7 @@ li {
 
     .bWarp {
         width: auto;
-        margin: 0 auto;
+        margin: 10px;
         position: relative;
     }
 
