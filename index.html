@@ -16,12 +16,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@200&family=Roboto+Mono:ital,wght@1,700&display=swap"
         rel="stylesheet">
-
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- owl.carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    </link>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    </link>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <style>
-        .new-t>img {
-            height: 200px;
-        }
+        /* .new-t>img {
+            /* 原 height: 200px;*/
     </style>
 </head>
 
@@ -60,7 +66,7 @@
     <div class="bWarp">
         <div class="banner">
             <div>
-                <img class="onRail" src="./train_3.jpg" alt="">
+                <img class="onRail" src="./train_3-o.jpg" alt="">
             </div>
             <div class="goTo">
                 <div class="goTo-hashtag">#九州鐵道</div>
@@ -80,11 +86,10 @@
     <div class="list_block" id="pop"></div>
     <div class="bWarp">
         <div class="hotgoWrap">
-            <div class="list_block"></div>
             <div class="aca">
                 <div class="title">熱門精選</div>
             </div>
-            <div class="hotgo">
+            <div class="hotgo owl-carousel owl-theme">
                 <div class="cardWrap">
                     <div class="ezcard"><img src="ryanair-gffa2753c6_1280.jpg" alt=""></div>
                     <div class="eztext">熱門機票</div>
@@ -112,7 +117,7 @@
             </div>
             <div class="list_block" id="news"></div>
         </div>
-        
+
         <div class="news">
             <div class="aca">
                 <div class="title">最近消息</div>
@@ -189,7 +194,7 @@
                     <div class="t-card-wrap">
                         <div class="t-card">
                             <a class="t-card-a" href="">
-                                <div class="new-t"><img src="./pic/zoo.jpg" alt=""></div>
+                                <div class="new-t"><img src="./pic/Aurora.jpg" alt=""></div>
                                 <div>
                                     <div class="t-title">南投草屯︱九九峰動物樂園</div>
                                     <div class="t-info">門票｜全票贈半山夢工廠門票｜贈 LINE TAXI 搭車金＆麥當勞冰淇淋</div>
@@ -347,7 +352,24 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        $(".owl-carousel").owlCarousel({
+            loop: true, // 循環播放
+            margin: 10, // 外距 10px
+            nav: true, // 顯示點點
+            responsive: {
+                0: {
+                    items: 1 // 螢幕大小為 0~600 顯示 1 個項目
+                },
+                600: {
+                    items: 3 // 螢幕大小為 600~1000 顯示 3 個項目
+                },
+                1000: {
+                    items: 5 // 螢幕大小為 1000 以上 顯示 5 個項目
+                }
+            }
+        });
+    </script>
 
 
 </body>
