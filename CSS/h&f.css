@@ -86,12 +86,11 @@ a {
 
 .subList {
     background-color: #283B61;
-    margin: 100px auto;
+    margin: 50px auto;
     text-align: center;
     font-weight: 500;
     position: sticky;
     top: -1px;
-    ;
     z-index: 3;
     padding: 20px;
 }
@@ -633,7 +632,99 @@ li {
     border-radius: 10px;
 }
 
+.hamburger {
+    display: none;
+}
+
 @media screen and (max-width:1199.99999999999px) {
+    .ham {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, .3);
+        display: block;
+        position: fixed;
+        z-index: 5;
+        margin-left: 10px;
+    }
+
+    .ham-origin {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    .ham-bar {
+        height: 2px;
+        width: 26px;
+        position: absolute;
+        background: white;
+        margin: -1px 0 0 -13px;
+        transition: all .5s;
+    }
+
+    .ham-bar--top {
+        transform: translateY(-6px);
+    }
+
+    .ham-bar--bottom {
+        transform: translateY(6px);
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+
+    #nav-toggle:checked~.ham .ham-bar--middle {
+        opacity: 0;
+    }
+
+    #nav-toggle:checked~.ham .ham-bar--top {
+        transform: rotate(-45deg);
+    }
+
+    #nav-toggle:checked~.ham .ham-bar--bottom {
+        transform: rotate(45deg);
+    }
+
+    /* Nav Style */
+
+    .menu-h {
+        z-index: 4;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 30px;
+        background: #232229;
+        /* 用 translate 把選單藏到畫面右邊去 */
+        transform: translateX(100%);
+        transition: transform .5s;
+    }
+
+    #nav-toggle:checked~.menu-h {
+        transform: none;
+    }
+
+    .menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-item+.menu-item {
+        margin-top: 20px;
+    }
+
+    .menu-link {
+        text-decoration: none;
+        color: white;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
     .menu {
         display: none;
     }
@@ -666,7 +757,7 @@ li {
 
     .subList {
         background-color: #283B61;
-        margin: 100px auto;
+        margin: 50px auto;
         text-align: center;
         font-weight: 500;
         position: sticky;
@@ -714,12 +805,15 @@ li {
         width: auto;
         margin: 0 auto;
     }
-    .other-section{
+
+    .other-section {
         width: auto;
     }
-    .subList{
+
+    .subList {
         display: block;
     }
+
     /* .icon_wrap{
         display: unset;
         width: auto;
@@ -732,25 +826,31 @@ li {
     .iconColor i{
         margin-top: 10px;
     } */
-    .footer-section{
+    .footer-section {
         display: none;
     }
-    .onRail{
+
+    .onRail {
         height: auto;
     }
+
     .new-t>img {
         height: auto;
     }
+
     .cardWrap {
         margin: 0px;
-   }
-   .owl-item {
-    padding: 20px;
-   }
-   .t-card {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 10px;
-   }
+    }
+
+    .owl-item {
+        padding: 20px;
+    }
+
+    .t-card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 10px;
+    }
+
 }
