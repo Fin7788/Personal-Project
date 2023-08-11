@@ -9,10 +9,11 @@ $(window).scroll(function() {
     }
 });
 
-let gotop = document.getElementById("top");
-
-gotop.addEventListener("click", function() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-
-});
+// $(window).scroll(function(){
+//     let scrollint = $(this).scrollTop();
+//     if ( scrollint <= 800){
+//         $('#subList-b').css('display','none')
+//     }else {
+//         $('#subList-b').css('display','block')
+//     }
+// });

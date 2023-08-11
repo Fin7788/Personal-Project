@@ -90,9 +90,12 @@ a {
     text-align: center;
     font-weight: 500;
     position: sticky;
-    top: -1px;
+    top:-1px;
     z-index: 3;
     padding: 20px;
+}
+#subList-b{
+    display: none;
 }
 
 .CJ {
@@ -496,21 +499,22 @@ img {
     text-decoration: underline;
 }
 
-#top{
+#top {
     display: none;
 }
+
 .top-b {
     width: 50px;
     height: 50px;
     position: fixed;
-    bottom: 30px;
+    bottom: 60px;
     right: 10px;
     background-color: #232229;
     color: #FEECC8;
     border-radius: 50%;
     text-align: center;
     padding-top: 15px;
-    z-index: 3;
+    z-index: 5;
 }
 
 @media screen and (min-width:1200px) {
@@ -758,15 +762,31 @@ li {
         background-color: #232229eb;
     }
 
-    .subList {
+    /* .subList {
         background-color: #283B61;
         margin: 50px auto;
         text-align: center;
         font-weight: 500;
-        position: sticky;
+        position: unset;
         z-index: 3;
         padding: 20px;
         top: -1px;
+    } */
+    .subList{
+        display: none;
+    }
+
+    #subList-b {
+        display: block;
+        background-color: #283B61;
+        width: 100%;
+        margin: 50px auto;
+        text-align: center;
+        font-weight: 500;
+        position: sticky;
+        bottom: 0px;
+        z-index: 3;
+        padding: 20px;
     }
 
     .cardWrap {
@@ -811,10 +831,6 @@ li {
 
     .other-section {
         width: auto;
-    }
-
-    .subList {
-        display: block;
     }
 
     /* .icon_wrap{
