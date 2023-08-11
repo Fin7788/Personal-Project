@@ -19,7 +19,6 @@
 
 
     <style>
-
         .breadcrumb li+li:before {
             content: ">";
             text-rendering: auto;
@@ -36,7 +35,7 @@
             display: flex;
             align-items: center;
             font-size: 12px;
-            
+
         }
 
         .breadcrumb-item a {
@@ -65,6 +64,7 @@
             font-weight: 400;
             width: 900px;
         }
+
         .locI {
             width: 20px;
             height: 20px;
@@ -165,56 +165,69 @@
         .login {
             display: flex;
         }
-        .login > div {
+
+        .login>div {
             width: 50%;
         }
-        .loginS div{
-            margin: 10px 0;     
+
+        .loginS div {
+            margin: 10px 0;
         }
-        .loginS label{
+
+        .loginS label {
             display: block;
             margin: 10px;
         }
-        .captcha-img img{
+
+        .captcha-img img {
             width: 100px;
             height: 30px;
             background-color: #8c8c8c;
-            
+
         }
-        .captcha-img{
+
+        .captcha-img {
             display: flex;
         }
-        .captcha-img button{
+
+        .captcha-img button {
             margin: 10px;
             border-radius: 10px;
             background-color: transparent;
             border: 1px solid #ccc;
         }
-        .loginSS > table *{
+
+        .loginSS>table * {
             margin-bottom: 10px;
             padding: 10px;
         }
-        .loginSS > table td{
+
+        .loginSS>table td {
             display: flex;
         }
-        .loginSS > table td span{
+
+        .loginSS>table td span {
             font-size: 1.3rem;
         }
-        .login > div > h2{
+
+        .login>div>h2 {
             font-size: 20px;
             font-weight: 600;
         }
-        .logBox > input{
+
+        .logBox>input {
             padding: 10px;
             border-radius: 10px;
             border: 1px solid #ccc;
         }
-        .captcha > input{
+
+        .captcha>input {
             padding: 10px;
             border-radius: 10px;
             border: 1px solid #ccc;
         }
-        .lb > button{
+
+        .lb>button {
             width: 200px;
             padding: 10px;
             border-radius: 10px;
@@ -225,7 +238,9 @@
 
 <body>
     <header>
-        <a href="#top"><div class="top-b">TOP</div></a>
+        <a href="#" class="top-btn none" id="top">
+            <div class="top-b">TOP</div>
+        </a>
         <div class="ttt">
             <div class="hamburger">
                 <input id="nav-toggle" type="checkbox">
@@ -306,8 +321,7 @@
                     <input class="captcha-code" type="text" name="" id="" placeholder="請輸入驗證碼">
                     <div class="captcha-img">
                         <div>
-                            <img src=""
-                            alt="">
+                            <img src="" alt="">
                         </div>
                         <button>重新產生驗證碼</button>
                     </div>

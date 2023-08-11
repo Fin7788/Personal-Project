@@ -170,7 +170,9 @@
 
 <body>
     <header>
-        <a href="#top"><div class="top-b">TOP</div></a>
+        <a href="#" class="top-btn none" id="top">
+            <div class="top-b">TOP</div>
+        </a>
         <div class="ttt">
             <div class="hamburger">
                 <input id="nav-toggle" type="checkbox">
@@ -403,18 +405,18 @@
 
     <script>
         function toggleHeart() {
-          const heartIcon = document.querySelector('.heart-icon');
-          
-          // 檢查是否已經含有實心愛心的類別名稱，若有則切換回空心愛心，反之則切換成實心愛心
-          if (heartIcon.classList.contains('fas')) {
-            heartIcon.classList.remove('fas');
-            heartIcon.classList.add('far');
-          } else {
-            heartIcon.classList.remove('far');
-            heartIcon.classList.add('fas');
-          }
+            const heartIcon = document.querySelector('.heart-icon');
+
+            // 檢查是否已經含有實心愛心的類別名稱，若有則切換回空心愛心，反之則切換成實心愛心
+            if (heartIcon.classList.contains('fas')) {
+                heartIcon.classList.remove('fas');
+                heartIcon.classList.add('far');
+            } else {
+                heartIcon.classList.remove('far');
+                heartIcon.classList.add('fas');
+            }
         }
-      </script>
+    </script>
 
 </body>
 
