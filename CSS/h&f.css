@@ -63,6 +63,10 @@ ul>li {
     text-align: left;
 }
 
+.theme-card-main-m {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: #232229;
@@ -82,6 +86,7 @@ a {
 .banner>img {
     width: 80%;
     margin: 0 auto;
+    display: block;
 }
 
 .subList {
@@ -90,11 +95,12 @@ a {
     text-align: center;
     font-weight: 500;
     position: sticky;
-    top:-1px;
+    top: -1px;
     z-index: 3;
     padding: 20px;
 }
-#subList-b{
+
+#subList-b {
     display: none;
 }
 
@@ -268,7 +274,7 @@ img {
 }
 
 .list_block {
-    padding-top: 30px;
+    margin-top: 30px;
 }
 
 .t-card-wrap {
@@ -387,7 +393,7 @@ img {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #cccccc4a;
+    color: #ffffff;
     padding: 10px;
     border-radius: 10px;
 }
@@ -414,10 +420,6 @@ img {
     position: relative;
 }
 
-.theme-card-main img {
-    height: 391px;
-}
-
 .theme-card-main-Text {
     position: absolute;
     bottom: 10%;
@@ -442,6 +444,7 @@ img {
 .self-guided-card {
     width: 25%;
     margin: 10px;
+    line-height: 2;
 }
 
 .SG-title {
@@ -463,7 +466,14 @@ img {
     color: #f01515;
 }
 
-.client-review h3 {
+.more-de{
+    width: 65%;
+}
+.client-review{
+    display: flex;
+    justify-content: space-between;
+}
+.client-review-t{
     color: #232229;
     font-size: 20px;
     font-weight: 600;
@@ -644,6 +654,9 @@ li {
 }
 
 @media screen and (max-width:1199.99999999999px) {
+    .more-de{
+        width: 100%;
+    }
     .ham {
         width: 40px;
         height: 40px;
@@ -772,7 +785,7 @@ li {
         padding: 20px;
         top: -1px;
     } */
-    .subList{
+    .subList {
         display: none;
     }
 
@@ -809,6 +822,31 @@ li {
         display: none;
     }
 
+    .theme-card-main-m {
+        display: flex;
+        position: relative;
+    }
+
+    .theme-card-grid {
+        display: none;
+    }
+    .theme-card-main{
+        display: none;
+    }
+    .loc-Text {
+        font-size: 12px;
+
+        color: #ffffff;
+        margin: 0;
+        padding: 5px;
+    }
+    .theme-card-grid-Text{
+        font-size: 10px;
+        position: unset;
+    }
+    .banner>img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:1023.99999999999px) {}
