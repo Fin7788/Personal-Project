@@ -9,6 +9,19 @@ body {
     overflow-x: hidden;
 }
 
+.theme-card-main {
+    width: 50%;
+    margin: 10px;
+    position: relative;
+}
+
+.theme-card-grid-Text {
+    line-height: 2;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
 p {
     padding: 10px 0;
 }
@@ -298,11 +311,14 @@ img {
 
 .t-title {
     margin: 10px;
+    line-height: 1.2;
+    height: 50px;
 }
 
 .t-info {
     margin-left: 5%;
     font-size: 8px;
+    height: 75px;
 }
 
 .t-card-a {
@@ -402,10 +418,6 @@ img {
     display: flex;
 }
 
-.theme-Box>div {
-    margin: 10px;
-}
-
 .theme-card-grid {
     width: 50%;
     display: grid;
@@ -413,32 +425,27 @@ img {
     /* 兩列等分 */
     grid-gap: 10px;
     /* 設定卡片間的間距 */
+    margin: 10px;
 }
 
-.theme-card-main {
-    width: 50%;
-    position: relative;
+.theme-card-grid div {
+    color: #FFF;
 }
 
 .theme-card-main-Text {
     position: absolute;
-    bottom: 10%;
-    border-radius: 10px;
-    padding: 10px;
+    bottom: 0;
+    left: 10px;
     font-size: 20px;
+    line-height: 2;
+}
+
+.theme-card-main-Text div {
+    color: #FFF;
 }
 
 .gridC {
     position: relative;
-}
-
-.theme-card-grid-Text {
-    position: absolute;
-    bottom: 10%;
-    font-weight: 700;
-    margin: 0;
-    min-height: 50px;
-    line-height: 20px;
 }
 
 .self-guided-card {
@@ -466,14 +473,16 @@ img {
     color: #f01515;
 }
 
-.more-de{
+.more-de {
     width: 65%;
 }
-.client-review{
+
+.client-review {
     display: flex;
     justify-content: space-between;
 }
-.client-review-t{
+
+.client-review-t {
     color: #232229;
     font-size: 20px;
     font-weight: 600;
@@ -649,14 +658,270 @@ li {
     border-radius: 10px;
 }
 
+.breadcrumb li+li:before {
+    content: ">";
+    text-rendering: auto;
+    color: #999;
+    margin: 0 7px;
+    padding: 0;
+}
+
+.breadcrumb {
+    margin: 12px;
+}
+
+.breadcrumb-ol {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 16px;
+}
+
+.Splide-track>img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    width: 900px;
+}
+
+.locI {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    vertical-align: bottom;
+}
+
+.P-title {
+    display: flex;
+    align-items: center;
+}
+
+.location-wrap {
+    display: flex;
+    align-items: center;
+    margin: 10px 12px;
+}
+
+.location_info {
+    margin-left: 10px;
+}
+
+.review-item {
+    display: flex;
+}
+
+.editor-logo {
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.review-item div {
+    margin: 10px;
+}
+
+.re-text {
+    width: 500px;
+}
+
+.pickone h3 {
+    color: #232229;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.re-text-info {
+    background-color: #ccc;
+    padding: 10px 10px 10px 0;
+    border-radius: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.promotion-offer-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promotion-offer-topA button {
+    width: 100px;
+}
+
+.promotion-offer-topA {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pickone {
+    padding: 10px;
+    border: 1px solid;
+    background-color: #FFF;
+    box-shadow: 10px 10px 10px #8c8c8c;
+    border-radius: 10px;
+}
+
+
+
+
+.loginS div {
+    margin: 10px 0;
+}
+
+.loginS label {
+    display: block;
+    margin: 10px;
+}
+
+.captcha-img img {
+    width: 100px;
+    height: 30px;
+    background-color: #8c8c8c;
+
+}
+
+.captcha-img {
+    display: flex;
+}
+
+.captcha-img button {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+}
+
+.loginSS>table * {
+    margin-bottom: 10px;
+    padding: 5px;
+    line-height: 1.8;
+}
+
+.loginSS>table td {
+    display: flex;
+}
+
+.loginSS>table td span {
+    font-size: 1.3rem;
+}
+
+.login>div>h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logBox>input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.captcha>input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.lb>button {
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
 .hamburger {
     display: none;
 }
 
+#page-mid,
+#page-south {
+    display: none;
+}
+
+#register {
+    display: none;
+}
+
+#failed {
+    line-height: 2;
+    display: none;
+}
+
+.login>div {
+    width: 50%;
+}
+
+.login {
+    display: flex;
+}
+
 @media screen and (max-width:1199.99999999999px) {
-    .more-de{
+    .login {
+        display: block;
+    }
+
+    .loginSS>table * {
+        margin: 0 20px;
+    }
+
+    .login h2 {
+        border: 1px solid #232229;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .login>div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .loginS div {
+        justify-content: center;
+    }
+
+    .t-card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .t-title {
+        margin: 0;
+    }
+
+    .more-de {
         width: 100%;
     }
+
     .ham {
         width: 40px;
         height: 40px;
@@ -825,25 +1090,29 @@ li {
     .theme-card-main-m {
         display: flex;
         position: relative;
+        margin: 10px;
     }
 
     .theme-card-grid {
         display: none;
     }
-    .theme-card-main{
+
+    .theme-card-main {
         display: none;
     }
+
     .loc-Text {
         font-size: 12px;
-
         color: #ffffff;
         margin: 0;
         padding: 5px;
     }
-    .theme-card-grid-Text{
+
+    .theme-card-grid-Text {
         font-size: 10px;
         position: unset;
     }
+
     .banner>img {
         width: 100%;
     }
@@ -901,13 +1170,6 @@ li {
 
     .owl-item {
         padding: 20px;
-    }
-
-    .t-card {
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        padding: 5px;
-        margin: 10px;
     }
 
 }

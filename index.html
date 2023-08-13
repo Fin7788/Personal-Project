@@ -217,12 +217,61 @@
                     <div class="aca">
                         <div class="title">主題行程</div>
                         <div class="w-button">
-                            <button>亞洲</button>
-                            <button>亞洲</button>
-                            <button>亞洲</button>
+                            <button onclick="showPage('page-north')">北部</button>
+                            <button onclick="showPage('page-mid')">中部</button>
+                            <button onclick="showPage('page-south')">南部</button>
                         </div>
                     </div>
-                    <div class="t-card-wrap">
+                    <div class="t-card-wrap" id="page-north">
+                        <div class="t-card">
+                            <a class="t-card-a" href="">
+                                <div class="new-t"><img src="./pic/Aurora.jpg" alt=""></div>
+                                <div>
+                                    <div class="t-title">台北101觀景台門票</div>
+                                    <div class="t-info">｜獨家贈 LINE TAXI 搭車金</div>
+                                    <div class="price">
+                                        <span class="cash">NTD 999.99</span>
+                                        <span class="dd">$</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="t-card">
+                            <a class="t-card-a" href="">
+                                <div class="new-t"><img src="p.jpg" alt=""></div>
+                                <div class="t-title">台北101觀景台門票</div>
+                                <div class="t-info">｜獨家贈 LINE TAXI 搭車金</div>
+                                <div class="price">
+                                    <span class="cash">NTD 999.99</span>
+                                    <span class="dd">$</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="t-card">
+                            <a class="t-card-a" href="">
+                                <div class="new-t"><img src="./pic/Aurora.jpg" alt=""></div>
+                                <div class="t-title">台北101觀景台門票</div>
+                                <div class="t-info">｜獨家贈 LINE TAXI 搭車金</div>
+                                <div class="price">
+                                    <span class="cash">NTD 999.99</span>
+                                    <span class="dd">$</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="t-card">
+                            <a class="t-card-a" href="">
+                                <div class="new-t"><img src="p.jpg" alt=""></div>
+                                <div class="t-title">台北101觀景台門票</div>
+                                <div class="t-info">｜獨家贈 LINE TAXI 搭車金</div>
+                                <div class="price">
+                                    <span class="cash">NTD 999.99</span>
+                                    <span class="dd">$</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="t-card-wrap" id="page-mid">
+
                         <div class="t-card">
                             <a class="t-card-a" href="">
                                 <div class="new-t"><img src="./pic/Aurora.jpg" alt=""></div>
@@ -270,6 +319,55 @@
                             </a>
                         </div>
                     </div>
+                    <div class="t-card-wrap" id="page-south">
+                        <div class="t-card">
+                            <a class="t-card-a" href="">
+                                <div class="new-t"><img src="./pic/Aurora.jpg" alt=""></div>
+                                <div>
+                                    <div class="t-title">【即買即用】台灣屏東｜墾丁水世界｜室內水上樂園</div>
+                                    <div class="t-info">｜獨家贈 LINE TAXI 搭車金</div>
+                                    <div class="price">
+                                        <span class="cash">NTD 999.99</span>
+                                        <span class="dd">$</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="t-card">
+                            <a class="t-card-a" href="">
+                                <div class="new-t"><img src="p.jpg" alt=""></div>
+                                <div class="t-title">屏東｜墾丁國家森林遊樂區＆鵝鑾鼻公園門票｜贈 LINE TAXI 搭車金</div>
+                                <div class="t-info">門票｜全票贈半山夢工廠門票｜贈 LINE TAXI 搭車金＆麥當勞冰淇淋</div>
+                                <div class="price">
+                                    <span class="cash">NTD 999.99</span>
+                                    <span class="dd">$</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="t-card">
+                            <a class="t-card-a" href="">
+                                <div class="new-t"><img src="./pic/Aurora.jpg" alt=""></div>
+                                <div class="t-title">【即買即用】台灣屏東｜墾丁水世界｜室內水上樂園</div>
+                                <div class="t-info">｜獨家贈 LINE TAXI 搭車金</div>
+                                <div class="price">
+                                    <span class="cash">NTD 999.99</span>
+                                    <span class="dd">$</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="t-card">
+                            <a class="t-card-a" href="">
+                                <div class="new-t"><img src="p.jpg" alt=""></div>
+                                <div class="t-title">【即買即用】台灣屏東｜墾丁水世界｜室內水上樂園</div>
+                                <div class="t-info">｜獨家贈 LINE TAXI 搭車金</div>
+                                <div class="price">
+                                    <span class="cash">NTD 999.99</span>
+                                    <span class="dd">$</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="list_block" id="hot"></div>
                 </div>
             </div>
@@ -393,7 +491,7 @@
         $(".owl-carousel").owlCarousel({
             loop: true, // 循環播放
             margin: 10, // 外距 10px
-            nav: true, // 顯示點點
+            nav: false, // 顯示點點
             responsive: {
                 0: {
                     items: 1 // 螢幕大小為 0~600 顯示 1 個項目
@@ -402,10 +500,19 @@
                     items: 3 // 螢幕大小為 600~1000 顯示 3 個項目
                 },
                 1000: {
-                    items: 5 // 螢幕大小為 1000 以上 顯示 5 個項目
+                    items: 6 // 螢幕大小為 1000 以上 顯示 5 個項目
                 }
             }
         });
+
+    </script>
+    <script>
+        function showPage(pageId) {
+            document.getElementById('page-north').style.display = 'none';
+            document.getElementById('page-mid').style.display = 'none';
+            document.getElementById('page-south').style.display = 'none';
+            document.getElementById(pageId).style.display = 'flex';
+        }
     </script>
 
 

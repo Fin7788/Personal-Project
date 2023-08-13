@@ -85,6 +85,7 @@
         .location_info {
             margin-left: 10px;
         }
+
         .review-item {
             display: flex;
         }
@@ -153,9 +154,7 @@
             display: flex;
         }
 
-        .login>div {
-            width: 50%;
-        }
+
 
         .loginS div {
             margin: 10px 0;
@@ -186,7 +185,8 @@
 
         .loginSS>table * {
             margin-bottom: 10px;
-            padding: 10px;
+            padding: 5px;
+            line-height: 1.8;
         }
 
         .loginSS>table td {
@@ -291,12 +291,18 @@
     <div class="bWarp">
         <nav class="breadcrumb">
             <ol class="breadcrumb-ol">
-                <li class="breadcrumb-item"><a href="/4Member.html">會員專區</a></li>
+                <li class="breadcrumb-item"><a href="./Member.html">會員專區</a></li>
                 <li class="breadcrumb-item"><a href="#">登入</a></li>
             </ol>
         </nav>
         <div class="login">
-            <div class="loginS">
+            <div class="loginS" id="failed">
+                <h2>登入失敗</h2>
+                <div class="lb">
+                    <button onclick="showPage('loginM')">返回登入畫面</button>
+                </div>
+            </div>
+            <div class="loginS" id="loginM">
                 <h2>會員登入</h2>
                 <div class="logBox">
                     <label for="login-email">帳號</label>
@@ -317,8 +323,27 @@
                     </div>
                 </div>
                 <div class="lb">
-                    <button>登入</button>
-                    <button>註冊</button>
+                    <button onclick="showPage('failed')">登入</button>
+                    <button onclick="showPage('register')">註冊</button>
+                </div>
+            </div>
+            <div class="loginS" id="register">
+                <h2>註冊會員</h2>
+                <div class="logBox">
+                    <label for="login-email">帳號</label>
+                    <input class="email" type="email" name="" id="" placeholder="請輸入e-mail">
+                </div>
+                <div class="logBox">
+                    <label for="login-Pwd">密碼</label>
+                    <input class="password" type="password" name="" id="" placeholder="請輸入密碼">
+                </div>
+                <div class="logBox">
+                    <label for="login-Pwd">再次輸入密碼</label>
+                    <input class="password" type="password" name="" id="" placeholder="請輸入密碼">
+                </div>
+
+                <div class="lb">
+                    <button onclick="showPage('failed')">確認</button>
                 </div>
             </div>
             <div class="loginSS">
@@ -427,6 +452,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        function showPage(pageId) {
+            document.getElementById('loginM').style.display = 'none';
+            document.getElementById('register').style.display = 'none';
+            document.getElementById('failed').style.display = 'none';
+            document.getElementById(pageId).style.display = 'inline-block';
+        }
+    </script>
 </body>
 
 </html>
