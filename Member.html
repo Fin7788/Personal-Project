@@ -19,207 +19,7 @@
 
 
     <style>
-        .breadcrumb li+li:before {
-            content: ">";
-            text-rendering: auto;
-            color: #999;
-            margin: 0 7px;
-            padding: 0;
-        }
-
-        .breadcrumb {
-            margin: 12px;
-        }
-
-        .breadcrumb-ol {
-            display: flex;
-            align-items: center;
-            font-size: 12px;
-
-        }
-
-        .breadcrumb-item a {
-            text-decoration: none;
-            color: #cccccc;
-        }
-
-        .breadcrumb-item a:hover {
-            text-decoration: underline;
-        }
-
-        p {
-            font-size: 16px;
-        }
-
-        .Splide-track>img {
-            display: block;
-            width: 80%;
-            margin: 0 auto;
-        }
-
-        h1 {
-            margin: 10px;
-            font-size: 20px;
-            font-weight: 400;
-            width: 900px;
-        }
-
-        .locI {
-            width: 20px;
-            height: 20px;
-            border-radius: 0;
-            vertical-align: bottom;
-        }
-
-        .P-title {
-            display: flex;
-            align-items: center;
-        }
-
-        .location-wrap {
-            display: flex;
-            align-items: center;
-            margin: 10px 12px;
-        }
-
-        .location_info {
-            margin-left: 10px;
-        }
-
-        .review-item {
-            display: flex;
-        }
-
-        .editor-logo {
-            background-color: #ccc;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-        }
-
-        .review-item div {
-            margin: 10px;
-        }
-
-        .re-text {
-            width: 500px;
-        }
-
-        .pickone h3 {
-            color: #232229;
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 40px;
-            position: relative;
-        }
-
-        .re-text-info {
-            background-color: #ccc;
-            padding: 10px 10px 10px 0;
-            border-radius: 10px;
-        }
-
-        h4 {
-            font-size: 20px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        .promotion-offer-title {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .promotion-offer-topA button {
-            width: 100px;
-        }
-
-        .promotion-offer-topA {
-            display: flex;
-            flex-wrap: wrap;
-            width: 220px;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .pickone {
-            padding: 10px;
-            border: 1px solid;
-            background-color: #FFF;
-            box-shadow: 10px 10px 10px #8c8c8c;
-            border-radius: 10px;
-        }
-
-        .login {
-            display: flex;
-        }
-
-
-
-        .loginS div {
-            margin: 10px 0;
-        }
-
-        .loginS label {
-            display: block;
-            margin: 10px;
-        }
-
-        .captcha-img img {
-            width: 100px;
-            height: 30px;
-            background-color: #8c8c8c;
-
-        }
-
-        .captcha-img {
-            display: flex;
-        }
-
-        .captcha-img button {
-            margin: 10px;
-            border-radius: 10px;
-            background-color: transparent;
-            border: 1px solid #ccc;
-        }
-
-        .loginSS>table * {
-            margin-bottom: 10px;
-            padding: 5px;
-            line-height: 1.8;
-        }
-
-        .loginSS>table td {
-            display: flex;
-        }
-
-        .loginSS>table td span {
-            font-size: 1.3rem;
-        }
-
-        .login>div>h2 {
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        .logBox>input {
-            padding: 10px;
-            border-radius: 10px;
-            border: 1px solid #ccc;
-        }
-
-        .captcha>input {
-            padding: 10px;
-            border-radius: 10px;
-            border: 1px solid #ccc;
-        }
-
-        .lb>button {
-            width: 200px;
-            padding: 10px;
-            border-radius: 10px;
-            border: 1px solid #ccc;
-        }
+       
     </style>
 </head>
 
@@ -296,12 +96,6 @@
             </ol>
         </nav>
         <div class="login">
-            <div class="loginS" id="failed">
-                <h2>登入失敗</h2>
-                <div class="lb">
-                    <button onclick="showPage('loginM')">返回登入畫面</button>
-                </div>
-            </div>
             <div class="loginS" id="loginM">
                 <h2>會員登入</h2>
                 <div class="logBox">
@@ -325,6 +119,12 @@
                 <div class="lb">
                     <button onclick="showPage('failed')">登入</button>
                     <button onclick="showPage('register')">註冊</button>
+                </div>
+            </div>
+            <div class="loginS" id="failed">
+                <h2>登入失敗</h2>
+                <div class="lb">
+                    <button onclick="showPage('loginM')">返回登入畫面</button>
                 </div>
             </div>
             <div class="loginS" id="register">
