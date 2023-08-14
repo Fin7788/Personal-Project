@@ -29,10 +29,85 @@
     <style>
         /* .new-t>img {
             /* 原 height: 200px;*/
+        .wrap {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            margin: auto;
+            text-align: center;
+            font-size: 0;
+            z-index: 5;
+            display: none;
+        }
+
+        .wrap:before {
+            content: '';
+            display: inline-block;
+            width: 0px;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .wrap:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            background-color: #232229;
+            opacity: .5
+        }
+
+        .popLogin {
+            width: 260px;
+            padding: 10px;
+            background-color: #F4C259;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            font-size: 16px;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 10px;
+        }
+
+        .popLogin>div {
+            padding: 10px;
+        }
+
+        #closeButton {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
     </style>
 </head>
 
 <body>
+    <div class="wrap" id="loginPopup">
+        <div class="popLogin">
+            <a href="#" id="closeButton" onclick="closeLogin()">X</a>
+            <div class="loginS" id="loginM">
+                <h2>會員登入</h2>
+                <div class="logBox">
+                    <label for="login-email">帳號</label>
+                    <input class="email" type="email" name="" id="" placeholder="請輸入e-mail">
+                </div>
+                <div class="logBox">
+                    <label for="login-Pwd">密碼</label>
+                    <input class="password" type="password" name="" id="" placeholder="請輸入密碼">
+                </div>
+            </div>
+            <div class="lb">
+                <button onclick="showPage('failed')">登入</button>
+                <button onclick="showPage('register')">註冊</button>
+            </div>
+        </div>
+    </div>
     <header>
         <a href="#" class="top-btn none" id="top">
             <div class="top-b">TOP</div>
@@ -62,10 +137,10 @@
                             <a class="menu-link" href="./Member.html">會員專區</a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="#">登入</a>
+                            <a class="menu-link loginLink" href="#">登入</a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="#">註冊</a>
+                            <a class="menu-link loginLink" href="#">註冊</a>
                         </li>
                     </ul>
                 </nav>
@@ -88,8 +163,8 @@
                         </ul>
                         <ul class="member">
                             <li><a href="./shoppingCar.html#"><i class="fas fa-shopping-cart"></i>
-                            <li><a href="">登入</a></li>
-                            <li><a href="">註冊</a></li>
+                            <li><a href="#" class="loginLink">登入</a></li>
+                            <li><a href="#" class="loginLink">註冊</a></li>
                         </ul>
                     </div>
                 </div>
@@ -128,7 +203,7 @@
                     </a>
                 </div>
             </div>
-        </div>   
+        </div>
     </div>
     <div class="subList">
         <a href="#pop" class="CJ">熱門精選</a>
@@ -529,7 +604,7 @@
 
     </script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('.carousel-B').owlCarousel({
                 items: 1, // 顯示的元素數量
                 loop: true, // 是否循環輪播
@@ -546,6 +621,19 @@
             document.getElementById('page-mid').style.display = 'none';
             document.getElementById('page-south').style.display = 'none';
             document.getElementById(pageId).style.display = 'flex';
+        }
+    </script>
+    <script>
+        const loginLinks = document.querySelectorAll('.loginLink');
+        loginLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                const loginPopup = document.getElementById('loginPopup');
+                loginPopup.style.display = 'block';
+            });
+        });
+        function closeLogin() {
+            var popLogin = document.querySelector('.wrap');
+            popLogin.style.display = 'none';
         }
     </script>
 
