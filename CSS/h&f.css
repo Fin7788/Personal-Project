@@ -8,6 +8,23 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.banner {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-right: 20px; /* 調整橫幅之間的間距 */
+}
+
+.banner:last-child {
+    margin-right: 0; /* 移除最後一個橫幅的間距 */
+}
 
 .theme-card-main {
     width: 50%;
@@ -449,7 +466,6 @@ img {
 }
 
 .self-guided-card {
-    width: 25%;
     margin: 10px;
     line-height: 2;
 }
@@ -656,6 +672,8 @@ li {
     width: 100px;
     border: 0;
     border-radius: 10px;
+    background-color: #283B61;
+    color: #FFF;
 }
 
 .breadcrumb li+li:before {
@@ -815,8 +833,9 @@ h4 {
 .captcha-img button {
     margin: 10px;
     border-radius: 10px;
-    background-color: transparent;
     border: 1px solid #ccc;
+    background-color: #283B61;
+    color: #FFF;
 }
 
 .loginSS>table * {
@@ -855,6 +874,8 @@ h4 {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #ccc;
+    background-color: #283B61;
+    color: #FFF;
 }
 
 .hamburger {
@@ -883,6 +904,21 @@ h4 {
     display: flex;
 }
 @media screen and (max-width:1199.99999999999px) {
+    .self-guided-card-wrap{
+        overflow-x: scroll;
+    }
+    .SCwrap h1{
+        width: 100%;
+    }
+    .SC{
+        display: block;
+    }
+    .SC-D{
+        display: block;
+    }
+    .SCTW{
+        display: block;
+    }
     .login {
         display: block;
     }
@@ -1126,7 +1162,6 @@ h4 {
 
     .bWarp {
         width: auto;
-        margin: 10px;
         position: relative;
     }
 

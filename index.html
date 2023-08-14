@@ -97,16 +97,38 @@
         </div>
     </header>
     <div class="bWarp">
-        <div class="banner" id="theOne">
-            <img class="onRail" src="./train_3-o.jpg" alt="">
-            <div class="goTo">
-                <div class="goTo-hashtag">#九州鐵道</div>
-                <div class="goTo-bar">九州鐵道旅</div>
-                <a class="goB" href="./product-page.html">
-                    <div>走吧 <i class="fas fa-arrow-right"></i></div>
-                </a>
+        <div class="owl-carousel carousel-B">
+            <div class="banner">
+                <img class="onRail" src="./train_3-o.jpg" alt="">
+                <div class="goTo">
+                    <div class="goTo-hashtag">#九州鐵道</div>
+                    <div class="goTo-bar">九州鐵道旅</div>
+                    <a class="goB" href="./product-page.html">
+                        <div>走吧 <i class="fas fa-arrow-right"></i></div>
+                    </a>
+                </div>
             </div>
-        </div>
+            <div class="banner">
+                <img class="onRail" src="./pic/ban.jpg" alt="">
+                <div class="goTo">
+                    <div class="goTo-hashtag">#九州鐵道</div>
+                    <div class="goTo-bar">九州鐵道旅</div>
+                    <a class="goB" href="./product-page.html">
+                        <div>走吧 <i class="fas fa-arrow-right"></i></div>
+                    </a>
+                </div>
+            </div>
+            <div class="banner">
+                <img class="onRail" src="./pic/ban2.jpg" alt="">
+                <div class="goTo">
+                    <div class="goTo-hashtag">#九州鐵道</div>
+                    <div class="goTo-bar">九州鐵道旅</div>
+                    <a class="goB" href="./product-page.html">
+                        <div>走吧 <i class="fas fa-arrow-right"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>   
     </div>
     <div class="subList">
         <a href="#pop" class="CJ">熱門精選</a>
@@ -120,7 +142,7 @@
             <div class="aca">
                 <div class="title">熱門精選</div>
             </div>
-            <div class="hotgo owl-carousel owl-theme">
+            <div class="hotgo owl-carousel owl-theme carousel-P">
                 <div class="cardWrap">
                     <div class="ezcard"><img src="ryanair-gffa2753c6_1280.jpg" alt=""></div>
                     <div class="eztext">熱門機票</div>
@@ -488,7 +510,7 @@
         </div>
     </footer>
     <script>
-        $(".owl-carousel").owlCarousel({
+        $(".carousel-P").owlCarousel({
             loop: true, // 循環播放
             margin: 10, // 外距 10px
             nav: false, // 顯示點點
@@ -500,11 +522,23 @@
                     items: 3 // 螢幕大小為 600~1000 顯示 3 個項目
                 },
                 1000: {
-                    items: 6 // 螢幕大小為 1000 以上 顯示 5 個項目
+                    items: 5 // 螢幕大小為 1000 以上 顯示 5 個項目
                 }
             }
         });
 
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel-B').owlCarousel({
+                items: 1, // 顯示的元素數量
+                loop: true, // 是否循環輪播
+                nav: false, // 顯示導航按鈕
+                autoplay: true, // 自動播放
+                autoplayTimeout: 3000, // 自動播放間隔
+                autoplayHoverPause: true // 滑鼠懸停暫停自動播放
+            });
+        });
     </script>
     <script>
         function showPage(pageId) {

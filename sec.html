@@ -93,18 +93,38 @@
 
     </header>
     <div class="bWarp">
-        <div class="banner">
-            <div>
-                <img class="onRail" src="./pic/wa.jpg" alt="">
+        <div class="owl-carousel carousel-B">
+            <div class="banner">
+                <img class="onRail" src="./train_3-o.jpg" alt="">
+                <div class="goTo">
+                    <div class="goTo-hashtag">#九州鐵道</div>
+                    <div class="goTo-bar">九州鐵道旅</div>
+                    <a class="goB" href="./product-page.html">
+                        <div>走吧 <i class="fas fa-arrow-right"></i></div>
+                    </a>
+                </div>
             </div>
-            <div class="goTo">
-                <div class="goTo-hashtag">#九州鐵道</div>
-                <div class="goTo-bar">九州鐵道旅</div>
-                <a class="goB" href="./product-page.html">
-                    <div>走吧 <i class="fas fa-arrow-right"></i></div>
-                </a>
+            <div class="banner">
+                <img class="onRail" src="./pic/ban.jpg" alt="">
+                <div class="goTo">
+                    <div class="goTo-hashtag">#九州鐵道</div>
+                    <div class="goTo-bar">九州鐵道旅</div>
+                    <a class="goB" href="./product-page.html">
+                        <div>走吧 <i class="fas fa-arrow-right"></i></div>
+                    </a>
+                </div>
             </div>
-        </div>
+            <div class="banner">
+                <img class="onRail" src="./pic/ban2.jpg" alt="">
+                <div class="goTo">
+                    <div class="goTo-hashtag">#九州鐵道</div>
+                    <div class="goTo-bar">九州鐵道旅</div>
+                    <a class="goB" href="./product-page.html">
+                        <div>走吧 <i class="fas fa-arrow-right"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>   
     </div>
     <div class="subList">
         <a href="#lo" class="CJ">選地點</a>
@@ -350,6 +370,18 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(document).ready(function(){
+            $('.carousel-B').owlCarousel({
+                items: 1, // 顯示的元素數量
+                loop: true, // 是否循環輪播
+                nav: false, // 顯示導航按鈕
+                autoplay: true, // 自動播放
+                autoplayTimeout: 3000, // 自動播放間隔
+                autoplayHoverPause: true // 滑鼠懸停暫停自動播放
+            });
+        });
+    </script>
 </body>
 
 </html>
