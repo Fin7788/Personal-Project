@@ -1043,6 +1043,9 @@ h4 {
     .self-guided-card-wrap {
         overflow-x: scroll;
     }
+    ..w-button>button{
+        color: #232229;
+    }
     .yacht {
         margin: 0 auto;
         display: block;
