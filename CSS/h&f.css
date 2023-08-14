@@ -8,6 +8,84 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+.yacht-img{
+    overflow: hidden;
+}
+.yacht-img img {
+    vertical-align: top;
+}
+
+.yacht{
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.yacht:nth-child(2n) {
+    flex-direction: row-reverse;
+    background-color: #F4C259;
+}
+
+.yacht-txt {
+    padding: 10px;
+    z-index: 3;
+}
+
+.yacht-txt>h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.yacht-txt>p {
+    line-height: 1.5;
+}
+
+.CB {
+    max-width: 1400px;
+    height: px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.CB>img {
+    width: 100%;
+    border-radius: 0;
+    opacity: 0.5;
+}
+
+
+
+.CB-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.CB-txt>div>a {
+    display: block;
+    border: 1px solid #232229;
+    background-color: #232229;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+}
+
+.yacht-img>img:hover {
+    transform: scaleX(1.2) scaleY(1.2);
+    transition: 3s;
+}
+
+.CB-txt {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #232229;
+    line-height: 1.5;
+}
+
 .carousel {
     display: flex;
     overflow-x: auto;
@@ -19,11 +97,13 @@ body {
 .banner {
     flex: 0 0 auto;
     scroll-snap-align: start;
-    margin-right: 20px; /* 調整橫幅之間的間距 */
+    margin-right: 20px;
+    /* 調整橫幅之間的間距 */
 }
 
 .banner:last-child {
-    margin-right: 0; /* 移除最後一個橫幅的間距 */
+    margin-right: 0;
+    /* 移除最後一個橫幅的間距 */
 }
 
 .theme-card-main {
@@ -903,22 +983,44 @@ h4 {
 .login {
     display: flex;
 }
+
 @media screen and (max-width:1199.99999999999px) {
-    .self-guided-card-wrap{
+    .self-guided-card-wrap {
         overflow-x: scroll;
     }
-    .SCwrap h1{
+    .yacht {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .CB-txt {
+        position: unset;
+        background-color: #F4C259;
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .CB>img {
+        display: none;
+    }
+
+    .SCwrap h1 {
         width: 100%;
     }
-    .SC{
+
+    .SC {
         display: block;
     }
-    .SC-D{
+
+    .SC-D {
         display: block;
     }
-    .SCTW{
+
+    .SCTW {
         display: block;
     }
+
     .login {
         display: block;
     }
